@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/quiz")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin("*")
 public class QuizController {
 
     private final QuizService quizService;
