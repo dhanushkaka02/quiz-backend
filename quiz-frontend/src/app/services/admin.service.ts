@@ -6,7 +6,7 @@ import { Observable, map } from 'rxjs';
   providedIn: 'root'
 })
 export class AdminService {
-  private apiUrl = 'http://localhost:8081/api';
+  private apiUrl = 'https://quiz-backend-pdpc.onrender.com/api';
 
   constructor(private http: HttpClient) {}
 

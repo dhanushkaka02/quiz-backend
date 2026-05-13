@@ -8,7 +8,7 @@ import { AuthResponse, LoginRequest, RegisterRequest, ApiResponse } from '../mod
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:8081/api/auth';
+  private apiUrl = 'https://quiz-backend-pdpc.onrender.com/api/auth';
   private currentUserSubject = new BehaviorSubject<AuthResponse | null>(null);
   public currentUser$ = this.currentUserSubject.asObservable();
   private isBrowser: boolean;

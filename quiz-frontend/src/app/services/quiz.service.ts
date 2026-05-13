@@ -7,7 +7,7 @@ import { Quiz, QuizDetail, QuizResult, QuizSubmitRequest, ApiResponse } from '..
   providedIn: 'root'
 })
 export class QuizService {
-  private apiUrl = 'http://localhost:8081/api';
+  private apiUrl = 'https://quiz-backend-pdpc.onrender.com/api';
 
   constructor(private http: HttpClient) {}
 
