@@ -20,12 +20,12 @@ import java.util.stream.Collectors;
 @CrossOrigin("*")
 public class AdminController {
 
-    private  QuizRepository quizRepository;
-    private  UserRepository userRepository;
-    private  QuizResultRepository quizResultRepository;
-    private  QuestionRepository questionRepository;
-    private  OptionRepository optionRepository;
-    private  QuizService quizService;
+    private final QuizRepository quizRepository;
+    private final UserRepository userRepository;
+    private final QuizResultRepository quizResultRepository;
+    private final QuestionRepository questionRepository;
+    private final OptionRepository optionRepository;
+    private final QuizService quizService;
 
     @GetMapping("/stats")
     @PreAuthorize("hasRole('ADMIN')")
@@ -207,6 +207,3 @@ public class AdminController {
                 .build());
     }
 }
-
-
-
